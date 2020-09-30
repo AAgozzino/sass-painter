@@ -1,0 +1,7 @@
+.nav{
+  @include listInline;
+
+  .list-item{
+    margin-left: 25px;
+  }
+}

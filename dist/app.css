@@ -4,3 +4,47 @@
   padding: 0;
 }
 
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+}
+
+header .header-top {
+  width: 100%;
+}
+
+header .header-top .header-top-list {
+  justify-content: flex-end;
+  padding: 10px 0;
+}
+
+header .header-bottom {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+
+header .header-bottom .header-bottom-list {
+  width: 100%;
+  justify-content: space-between;
+}
+
+header .header-bottom .header-bottom-list .list-item {
+  margin-left: 0;
+  padding: 0 25px;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+}
+
+.nav .list-item {
+  margin-left: 25px;
+}
+
