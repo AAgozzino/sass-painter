@@ -1,4 +1,6 @@
 header {
+  position: fixed;
+  width: 100%;
   background-color: #000;
   color: #fff;
 
@@ -8,6 +10,18 @@ header {
     .header-top-list{
       justify-content: flex-end;
       padding: 10px 0;
+
+      a{
+        color: #989898;
+        font-weight: 200;
+        font-size: 12px;
+
+        i{
+          color: #009cff;
+          vertical-align: middle;
+          margin-right: 7px;
+        }
+      }
     }
   }
 
@@ -16,6 +30,15 @@ header {
     height: 50px;
     line-height: 50px;
 
+    .nav-logo{
+      height: 50px;
+
+      img{
+        height: 40px;
+        padding: 8px 15px;
+      }
+    }
+
     .header-bottom-list{
       width: 100%;
       justify-content: space-between;
@@ -23,6 +46,11 @@ header {
       .list-item{
         margin-left: 0;
         padding: 0 25px;
+
+        i{
+          color: #878787;
+          vertical-align: middle;
+        }
       }
     }
   }
