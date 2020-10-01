@@ -1,13 +1,15 @@
 .nav{
-  @include listInline;
-  font-size: 14px;
 
-  .list-item{
-    margin-left: 25px;
+  &-list{
+    @include listInline;
 
-    a{
-      color: #fff;
-      text-decoration: none;
+    &-item{
+      margin-left: 25px;
+
+      a{
+        color: #fff;
+        text-decoration: none;
+      }
     }
   }
 }

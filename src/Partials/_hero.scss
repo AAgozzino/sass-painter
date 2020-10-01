@@ -1,7 +1,115 @@
 .hero{
   height: 463px;
   width: 100%;
-  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg);
-  background-position: top center;
-  background-repeat: no-repeat;
+  background-image: url('../img/hero-painteressentials-7.jpg');
+  @include bg_norepeat;
+
+  .container{
+    @include flexContainer;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+
+    .box{
+      padding: 0 15px;
+    }
+
+    .download{
+      &-title{
+        font-size: 30px;
+      }
+      &-list-title{
+        margin-top: 20px;
+      }
+      &-list{
+        list-style: $list_style_none;
+        margin-top: 10px;
+        &-item{
+          margin-bottom: 10px;
+          font-size: 16px;
+        }
+      }
+
+      .btn-download{
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: #666;
+        color: #fff;
+        text-decoration: $decoration_none;
+
+        &-body{
+          @include flexContainer;
+          align-items: center;
+
+          &-text{
+            @include flexContainer;
+            flex-direction: column;
+            padding-right: 15px;
+            border-right: 1px solid #fff;
+          }
+
+          .fas.fa-download{
+            padding-left: 15px;
+            font-size: 25px;
+          }
+        }
+      }
+    }
+
+    .buy{
+      background-color: rgba(0, 0, 0, 0.9);
+      position: relative;
+      height: calc(100% - 20px);
+      max-width: 370px;
+      margin-top: 20px;
+      padding-top: 55px;
+
+      img{
+        position: absolute;
+        top: 20px;
+        right: 10px;
+      }
+
+      .price{
+        font-size: 26px;
+        margin-bottom: 12px;
+      }
+
+      .buy-now{
+        color: #999;
+
+        .btn-buy-now{
+          display: inline-block;
+          margin: 20px 0px 12px 0px;
+          padding: 5px 20px;
+          color: #fff;
+          background-color: #009cff;
+          font-size: 16px;
+          text-decoration: $decoration_none;
+        }
+      }
+
+      .buy-limtime{
+        background-color: #fff;
+        color: #2c2c2c;
+        margin-top: 30px;
+        padding: 10px 15px;
+
+        &-title{
+          font-size: 18px;
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+        p{
+          margin-top: 5px;
+        }
+
+        a{
+          color: #009cff;
+          text-decoration: $decoration_none;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
 }

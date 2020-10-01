@@ -15,65 +15,72 @@
     <div class="container">
       <!-- Header-top -->
       <div class="header-top">
-        <ul class="header-top-list nav ">
-          <li class="list-item phone">
-            <a href="#"><i class="fas fa-phone-alt"></i>1-877-582-6735</a>
-          </li>
-          <li class="list-item chat">
-            <a href="#"><i class="fas fa-comment-alt"></i>Chat</a>
-          </li>
-          <li class="list-item sign-in">
-            <a href="#"><i class="fas fa-user"></i>Sign in</a>
-          </li>
-          <li class="list-item cart">
-            <a href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
-          </li>
-          <li class="list-item language">
-            <select name="languages" id="languages">
-              <option value="en">English</option>
-              <option value="de">Deutsch</option>
-              <option value="fr">Français</option>
-              <option value="jp">日本語</option>
-              <option value="tw">繁體中文</option>
-            </select>
-          </li>
-        </ul>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list-item phone">
+              <a href="#"><i class="fas fa-phone-alt"></i>1-877-582-6735</a>
+            </li>
+            <li class="nav-list-item chat">
+              <a href="#"><i class="fas fa-comment-alt"></i>Chat</a>
+            </li>
+            <li class="nav-list-item sign-in">
+              <a href="#"><i class="fas fa-user"></i>Sign in</a>
+            </li>
+            <li class="nav-list-item cart">
+              <a href="#"><i class="fas fa-shopping-cart"></i>Cart</a>
+            </li>
+            <li class="nav-list-item language">
+              <select name="languages" id="languages">
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="fr">Français</option>
+                <option value="jp">日本語</option>
+                <option value="tw">繁體中文</option>
+              </select>
+            </li>
+          </ul>
+        </nav>
       </div>
       <!-- /Header-top -->
 
       <!-- Header-bottom -->
-      <div class="header-bottom nav">
+      <div class="header-bottom">
         <!-- Logo -->
-        <div class="nav-logo">
+        <div class="header-bottom-logo">
           <img src="img/logo_painter.png" alt="Logo">
         </div>
         <!-- /Logo -->
-        <ul class="header-bottom-list nav ">
-          <li class="list-item">
-            <a href="#">Products <i class="fas fa-angle-down"></i></a>
-          </li>
-          <li class="list-item">
-            <a href="#">Brushes <i class="fas fa-angle-down"></i></a>
-          </li>
-          <li class="list-item">
-            <a href="#">Wacom Tablets</a>
-          </li>
-          <li class="list-item">
-            <a href="#">Special Offers</a>
-          </li>
-          <li class="list-item">
-            <a href="#">Free Trials</a>
-          </li>
-          <li class="list-item">
-            <a href="#">Business</a>
-          </li>
-          <li class="list-item">
-            <a href="#">Support <i class="fas fa-angle-down"></i></a>
-          </li>
-          <li class="list-item">
-            <a href="#">Learning <i class="fas fa-angle-down"></i></a>
-          </li>
-        </ul>
+
+        <!-- Header bottom nav -->
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-list-item">
+              <a href="#">Products <i class="fas fa-angle-down"></i></a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#">Brushes <i class="fas fa-angle-down"></i></a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#">Wacom Tablets</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#">Special Offers</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#">Free Trials</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#">Business</a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#">Support <i class="fas fa-angle-down"></i></a>
+            </li>
+            <li class="nav-list-item">
+              <a href="#">Learning <i class="fas fa-angle-down"></i></a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /Header bottom nav -->
       </div>
       <!-- /Header-bottom -->
     </div>
@@ -81,7 +88,59 @@
 
     <!-- Hero -->
     <div class="hero">
-      <!-- <img src="img/hero-painteressentials-7.jpg" alt=""> -->
+      <!-- Hero container -->
+      <div class="container">
+        <!-- Downolad -->
+        <div class="box download">
+          <p class="download-title">Painter Essentials 7 (windows/Mac)</p>
+          <h1 class="download-list-title">Painting software for beginners</h1>
+          <ul class="download-list">
+            <li class="download-list-item">
+              <i class="fas fa-angle-right"></i> User-friendly interface
+            </li>
+            <li class="download-list-item">
+              <i class="fas fa-angle-right"></i> AI-based photo painting
+            </li>
+            <li class="download-list-item">
+              <i class="fas fa-angle-right"></i> Industry-acclaimed brushes
+            </li>
+            <li class="download-list-item">
+              <i class="fas fa-angle-right"></i> Incredible speed
+            </li>
+            <li class="download-list-item">
+              <i class="fas fa-angle-right"></i> Built-in learning
+            </li>
+          </ul>
+          <a class="btn-download" href="#">
+            <div class="btn-download-body">
+              <div class="btn-download-body-text">DOWNOLAD TRIAL <span>For Windows/Mac</span></div>
+              <i class="fas fa-download"></i>
+            </div>
+          </a>
+        </div>
+        <!-- /Download -->
+
+        <!-- Buy -->
+        <div class="box buy">
+          <img src="img/money-back.png" alt="Money back">
+          <div class="price">$49.99</div>
+          <div class="buy-now">
+            <div class="buy-now-title">
+              DOWNLOAD
+            </div>
+            <a class="btn-buy-now" href="#">BUY NOW</a>
+          </div>
+          <div class="buy-limtime">
+            <div class="buy-limtime-title">
+              LIMITED-TIME OFFER
+            </div>
+            <p>FREE Animations Essentials Brush Pack ($19.99 value)</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        <!-- /Buy -->
+      </div>
+      <!-- /Hero container -->
     </div>
     <!-- /Hero -->
   </header>

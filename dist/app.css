@@ -6,6 +6,13 @@
 
 body {
   font-family: sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 23px;
+  font-weight: 400;
 }
 
 .container {
@@ -19,70 +26,60 @@ header {
   background-color: #000;
   color: #fff;
 }
-
 header .header-top {
   width: 100%;
 }
-
-header .header-top .header-top-list {
+header .header-top .nav-list {
   justify-content: flex-end;
   padding: 10px 0;
 }
-
-header .header-top .header-top-list a {
+header .header-top .nav-list a {
   color: #989898;
   font-weight: 200;
   font-size: 12px;
 }
-
-header .header-top .header-top-list a i {
+header .header-top .nav-list a i {
   color: #009cff;
   vertical-align: middle;
   margin-right: 7px;
 }
-
 header .header-bottom {
+  display: flex;
   width: 100%;
   height: 50px;
   line-height: 50px;
 }
-
-header .header-bottom .nav-logo {
+header .header-bottom-logo {
   height: 50px;
 }
-
-header .header-bottom .nav-logo img {
+header .header-bottom-logo img {
   height: 40px;
   padding: 8px 15px;
 }
-
-header .header-bottom .header-bottom-list {
+header .header-bottom .nav {
   width: 100%;
+}
+header .header-bottom .nav-list {
   justify-content: space-between;
 }
-
-header .header-bottom .header-bottom-list .list-item {
+header .header-bottom .nav-list-item {
   margin-left: 0;
   padding: 0 25px;
 }
-
-header .header-bottom .header-bottom-list .list-item i {
+header .header-bottom .nav-list-item i {
   color: #878787;
   vertical-align: middle;
 }
 
-.nav {
+.nav-list {
   display: flex;
   align-items: center;
   list-style: none;
-  font-size: 14px;
 }
-
-.nav .list-item {
+.nav-list-item {
   margin-left: 25px;
 }
-
-.nav .list-item a {
+.nav-list-item a {
   color: #fff;
   text-decoration: none;
 }
@@ -90,8 +87,99 @@ header .header-bottom .header-bottom-list .list-item i {
 .hero {
   height: 463px;
   width: 100%;
-  background-image: url(https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg);
+  background-image: url("../img/hero-painteressentials-7.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
-
+.hero .container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+.hero .container .box {
+  padding: 0 15px;
+}
+.hero .container .download-title {
+  font-size: 30px;
+}
+.hero .container .download-list-title {
+  margin-top: 20px;
+}
+.hero .container .download-list {
+  list-style: none;
+  margin-top: 10px;
+}
+.hero .container .download-list-item {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.hero .container .download .btn-download {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #666;
+  color: #fff;
+  text-decoration: none;
+}
+.hero .container .download .btn-download-body {
+  display: flex;
+  align-items: center;
+}
+.hero .container .download .btn-download-body-text {
+  display: flex;
+  flex-direction: column;
+  padding-right: 15px;
+  border-right: 1px solid #fff;
+}
+.hero .container .download .btn-download-body .fas.fa-download {
+  padding-left: 15px;
+  font-size: 25px;
+}
+.hero .container .buy {
+  background-color: rgba(0, 0, 0, 0.9);
+  position: relative;
+  height: calc(100% - 20px);
+  max-width: 370px;
+  margin-top: 20px;
+  padding-top: 55px;
+}
+.hero .container .buy img {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+.hero .container .buy .price {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+.hero .container .buy .buy-now {
+  color: #999;
+}
+.hero .container .buy .buy-now .btn-buy-now {
+  display: inline-block;
+  margin: 20px 0px 12px 0px;
+  padding: 5px 20px;
+  color: #fff;
+  background-color: #009cff;
+  font-size: 16px;
+  text-decoration: none;
+}
+.hero .container .buy .buy-limtime {
+  background-color: #fff;
+  color: #2c2c2c;
+  margin-top: 30px;
+  padding: 10px 15px;
+}
+.hero .container .buy .buy-limtime-title {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.hero .container .buy .buy-limtime p {
+  margin-top: 5px;
+}
+.hero .container .buy .buy-limtime a {
+  color: #009cff;
+  text-decoration: none;
+  margin-top: 5px;
+}
