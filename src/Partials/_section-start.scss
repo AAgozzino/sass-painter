@@ -1,0 +1,58 @@
+main{
+
+  #start.main-section{
+    background-image: url("../img/bg-section-start.jpg");
+    @include bg_norepeat;
+    background-size: cover;
+    background-position: center bottom;
+    position: relative;
+
+    .container{
+
+      .intro{
+
+        &-text{
+          color: #fff;
+
+          &-more{
+            font-size: 18px;
+
+            i{
+              border: 1px solid #fff;
+              border-radius: 100%;
+              width: 34px;
+              height: 34px;
+              line-height: 34px;
+              color: #fff;
+            }
+
+            a{
+              text-decoration: $decoration_none;
+              color: #fff;
+            }
+          }
+        }
+
+        &-image{
+          position: absolute;
+          bottom: 0;
+          margin: auto;
+
+          img{
+            display: block;
+            width: 100%;
+          }
+          .screen{
+            position: absolute;
+            bottom: 0;
+            margin: auto;
+            z-index: 9;
+          }
+          .screen-bg{
+            height: 550px;
+          }
+        }
+      }
+    }
+  }
+}

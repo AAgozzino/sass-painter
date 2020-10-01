@@ -1,0 +1,30 @@
+main{
+  .main-nav{
+    background-color: #E6E6E6;
+
+    .container{
+
+      .nav{
+
+        &-list{
+
+          &-item{
+            padding: 12px 24px;
+
+            a{
+              color: #555;
+              font-size: 18px;
+            }
+          }
+          
+          &-item.active{
+            background-color: #fff;
+            color: #000;
+            border-bottom: 3px solid #000;
+          }
+        }
+      }
+    }
+  }
+
+}

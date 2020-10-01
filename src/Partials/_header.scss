@@ -1,5 +1,4 @@
 header {
-  position: fixed;
   width: 100%;
   background-color: #000;
   color: #fff;
@@ -11,16 +10,18 @@ header {
     .nav-list{
       justify-content: flex-end;
       padding: 10px 0;
+      &-item{
+        margin-left: 25px;
+        a{
+          color: #989898;
+          font-weight: 200;
+          font-size: 12px;
 
-      a{
-        color: #989898;
-        font-weight: 200;
-        font-size: 12px;
-
-        i{
-          color: #009cff;
-          vertical-align: middle;
-          margin-right: 7px;
+          i{
+            color: #009cff;
+            vertical-align: middle;
+            margin-right: 7px;
+          }
         }
       }
     }
@@ -41,7 +42,7 @@ header {
         padding: 8px 15px;
       }
     }
-    
+
     .nav{
       width: 100%;
 
@@ -51,6 +52,10 @@ header {
         &-item{
           margin-left: 0;
           padding: 0 25px;
+
+          a{
+            color: #fff;
+          }
 
           i{
             color: #878787;
